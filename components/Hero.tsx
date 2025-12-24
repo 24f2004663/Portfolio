@@ -27,6 +27,14 @@ export default function Hero() {
             >
                 Data Science Undergraduate @ IIT Madras
             </motion.div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                className="text-xl md:text-2xl text-secondary mb-8 font-mono"
+            >
+                I build predictive models and scalable analytics applications to solve real-world problems using Python, ML, and modern web tools.
+            </motion.div>
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
