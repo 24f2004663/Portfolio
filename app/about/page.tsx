@@ -67,7 +67,7 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         className="relative"
                     >
-                        <span className="absolute -left-[41px] md:-left-[57px] top-0 w-5 h-5 rounded-full bg-accent border-4 border-background" />
+                        <span className="absolute -left-[43px] md:-left-[59px] top-1 w-5 h-5 rounded-full bg-accent border-4 border-background" />
                         <div className="text-accent font-mono mb-2">2024 - Present</div>
                         <br />
                         <h3 className="text-xl font-bold">BS in Data Science & Applications</h3>
@@ -83,7 +83,7 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         className="relative"
                     >
-                        <span className="absolute -left-[41px] md:-left-[57px] top-0 w-5 h-5 rounded-full bg-secondary border-4 border-background" />
+                        <span className="absolute -left-[43px] md:-left-[59px] top-1 w-5 h-5 rounded-full bg-secondary border-4 border-background" />
                         <div className="text-secondary font-mono mb-2">2022 - 2024</div>
                         <h3 className="text-xl font-bold">High School</h3>
                         <div className="text-secondary">Science Stream (PCM)</div>

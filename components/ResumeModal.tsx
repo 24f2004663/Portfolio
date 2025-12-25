@@ -33,7 +33,7 @@ export default function ResumeModal() {
                             <h2 className="text-xl font-bold">Resume</h2>
                             <div className="flex items-center gap-3">
                                 <Link
-                                    href="/Resume.pdf"
+                                    href="/Manoj_K_Resume.pdf"
                                     target="_blank"
                                     download
                                     className="p-2 hover:bg-white/10 rounded-full transition-colors hidden sm:flex items-center gap-2 text-sm font-medium"
@@ -42,7 +42,7 @@ export default function ResumeModal() {
                                     <span>Download</span>
                                 </Link>
                                 <Link
-                                    href="/Resume.pdf"
+                                    href="/Manoj_K_Resume.pdf"
                                     target="_blank"
                                     className="p-2 hover:bg-white/10 rounded-full transition-colors text-sm font-medium flex items-center gap-2"
                                 >
@@ -61,7 +61,7 @@ export default function ResumeModal() {
                         {/* PDF Viewer */}
                         <div className="flex-grow bg-zinc-900 rounded-b-xl overflow-hidden relative">
                             <iframe
-                                src="/Resume.pdf"
+                                src="/Manoj_K_Resume.pdf#toolbar=0&navpanes=0"
                                 className="w-full h-full border-none"
                                 title="Resume PDF"
                             />
