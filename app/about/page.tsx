@@ -21,14 +21,18 @@ export default function AboutPage() {
                     </h1>
                     <div className="space-y-4 text-secondary text-lg leading-relaxed">
                         <p>
-                            Hi, I'm Manoj. My journey started with exploring Linux kernels and has evolved into building sophisticated AI chatbots and data-driven applications.
+                            Hi, I'm Manoj K. I'm a Data Science undergraduate at IIT Madras focused on building data-driven systems, machine learning models, and scalable applications.
                         </p>
-                        <p>
-                            As a Data Science undergraduate at IIT Madras, I blend theoretical knowledge with practical engineering. I'm passionate about solving real-world problems using machine learning, computer vision, and scalable web technologies.
-                        </p>
-                        <p>
-                            When I'm not coding, you can find me optimizing algorithms on LeetCode or exploring the latest in IoT hardware.
-                        </p>
+                        <Link
+                            href="https://ds.study.iitm.ac.in/student/24F2004663"
+                            target="_blank"
+                            className="px-8 py-3 bg-accent text-white font-medium rounded-full hover:bg-accent/90 transition-all flex items-center gap-2 group cursor-pointer"
+                        >
+                            View IIT-Madras Profile
+                            <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </Link>
                     </div>
                 </motion.div>
 
@@ -36,7 +40,7 @@ export default function AboutPage() {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="relative w-[347px] h-[422px] rounded-2xl overflow-hidden border-2 border-orange-500 bg-card mx-auto md:ml-auto md:mr-0"
+                    className="relative w-[347px] h-[422px] rounded-2xl overflow-hidden border-[1.5px] border-orange-500/80 bg-card mx-auto md:ml-auto md:mr-0"
                 >
                     <Image
                         src="/Manojphoto.jpg"
@@ -60,15 +64,7 @@ export default function AboutPage() {
                         className="relative"
                     >
                         <span className="absolute -left-[41px] md:-left-[57px] top-0 w-5 h-5 rounded-full bg-accent border-4 border-background" />
-                        <div>
-                            <Link
-                                href="https://ds.study.iitm.ac.in/student/24F2004663"
-                                target="_blank"
-                                className="text-accent font-mono mb-2"
-                            >
-                                2024 - Present (Click for Profile)
-                            </Link>
-                        </div>
+                        <div className="text-accent font-mono mb-2">2024 - Present</div>
                         <br />
                         <h3 className="text-xl font-bold">BS in Data Science & Applications</h3>
                         <div className="text-secondary">IIT Madras</div>
