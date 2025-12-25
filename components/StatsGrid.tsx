@@ -6,6 +6,7 @@ import Image from 'next/image';
 import githubLogo from './github-mark-white.png';
 import kaggleLogo from './Kaggle_logo.png';
 import leetcodeLogo from './leetcode.png';
+import devpostLogo from './devpost.png';
 
 const stats = [
     {
@@ -34,13 +35,22 @@ const stats = [
         bg: "bg-blue-500/10",
         border: "border-blue-500/20",
         link: "https://www.kaggle.com/zesalamander/"
+    },
+    {
+        label: "Devpost Hackathons",
+        value: "25+",
+        image: devpostLogo,
+        color: "text-teal-500",
+        bg: "bg-teal-500/10",
+        border: "border-teal-500/20",
+        link: "https://devpost.com/24f2004663?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
     }
 ];
 
 export default function StatsGrid() {
     return (
         <section className="py-12 px-4 max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {stats.map((stat, index) => (
                     <motion.div
                         key={stat.label}
@@ -52,14 +62,14 @@ export default function StatsGrid() {
                         <Link
                             href={stat.link}
                             target="_blank"
-                            className={`p-6 rounded-2xl border ${stat.border} ${stat.bg} backdrop-blur-sm flex items-center gap-6 hover:scale-105 transition-transform block`}
+                            className={`p-4 rounded-2xl border ${stat.border} ${stat.bg} backdrop-blur-sm flex items-center gap-4 hover:scale-105 transition-transform block h-full`}
                         >
-                            <div className={`p-4 rounded-xl bg-background/50 ${stat.color} shrink-0`}>
-                                <Image src={stat.image} alt={stat.label} width={100} height={100} className="w-[100px] h-[100px] object-contain" />
+                            <div className={`p-2 rounded-xl bg-background/50 ${stat.color} shrink-0`}>
+                                <Image src={stat.image} alt={stat.label} width={80} height={80} className="w-20 h-20 object-contain rounded-lg" />
                             </div>
                             <div>
                                 <div className="text-3xl font-bold">{stat.value}</div>
-                                <div className="text-sm text-secondary">{stat.label}</div>
+                                <div className="text-sm text-secondary font-medium whitespace-nowrap">{stat.label}</div>
                             </div>
                         </Link>
                     </motion.div>

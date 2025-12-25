@@ -4,7 +4,11 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, Mail } from 'lucide-react';
 
+import { useContact } from '@/context/ContactContext';
+
 export default function Hero() {
+    const { openContact } = useContact();
+
     return (
         <section className="h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
             {/* Background Glow */}
@@ -31,7 +35,7 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="text-xl md:text-2xl text-secondary mb-8 font-mono"
+                className="text-xl md:text-2xl text-secondary mb-8 font-mono max-w-3xl mx-auto"
             >
                 I build predictive models and scalable analytics applications to solve real-world problems using Python, ML, and modern web tools.
             </motion.div>
@@ -49,13 +53,12 @@ export default function Hero() {
                     View Projects
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link
-                    href="mailto:contact@example.com"
-                    className="px-8 py-3 border border-card-border text-foreground font-medium rounded-full hover:bg-white/5 transition-all flex items-center gap-2"
+                <button
+                    onClick={openContact}
+                    className="px-8 py-3 border border-card-border text-foreground font-medium rounded-full hover:bg-white/5 transition-all flex items-center gap-2 cursor-pointer"
                 >
                     Contact Me
-                    <Mail className="w-4 h-4" />
-                </Link>
+                </button>
             </motion.div>
         </section>
     );
