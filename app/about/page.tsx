@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import TechStack from '@/components/TechStack';
+import StatsGrid from '@/components/StatsGrid';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -51,6 +52,9 @@ export default function AboutPage() {
                     />
                 </motion.div>
             </div>
+            <section>
+                <StatsGrid />
+            </section>
 
             {/* Timeline Section */}
             <section>
