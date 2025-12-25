@@ -36,10 +36,10 @@ export default function ResumeModal() {
                                     href="/Manoj_K_Resume.pdf"
                                     target="_blank"
                                     download
-                                    className="p-2 hover:bg-white/10 rounded-full transition-colors hidden sm:flex items-center gap-2 text-sm font-medium"
+                                    className="p-2 hover:bg-white/10 rounded-full transition-colors flex items-center gap-2 text-sm font-medium"
                                 >
                                     <Download className="w-4 h-4" />
-                                    <span>Download</span>
+                                    <span className="hidden sm:inline">Download</span>
                                 </Link>
                                 <Link
                                     href="/Manoj_K_Resume.pdf"
