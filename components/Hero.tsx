@@ -2,12 +2,14 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRight, Mail } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Download, Mail } from 'lucide-react';
 
 import { useContact } from '@/context/ContactContext';
+import { useResume } from '@/context/ResumeContext';
 
 export default function Hero() {
     const { openContact } = useContact();
+    const { openResume } = useResume();
 
     return (
         <section className="h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
@@ -53,6 +55,13 @@ export default function Hero() {
                     View Projects
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
+                <button
+                    onClick={openResume}
+                    className="px-8 py-3 bg-accent text-white font-medium rounded-full hover:bg-accent/90 transition-all flex items-center gap-2 group cursor-pointer"
+                >
+                    View Resume
+                    <Download className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
                 <button
                     onClick={openContact}
                     className="px-8 py-3 border border-card-border text-foreground font-medium rounded-full hover:bg-white/5 transition-all flex items-center gap-2 cursor-pointer"
