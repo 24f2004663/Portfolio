@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Manoj K. | Data Science Portfolio",
+  title: "Manoj K's Portfolio Website",
   description: "Data Science Undergraduate @ IIT Madras. Portfolio showcasing projects in AI, Web Dev, and IoT.",
 };
 
