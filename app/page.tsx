@@ -9,18 +9,19 @@ const featuredProjects: ProjectProps[] = [
     title: "Aarogya Sarthi",
     description: "AI-powered healthcare assistant providing personalized medical advice and appointment scheduling.",
     tags: ["Python", "Next.js", "TensorFlow", "NLP"],
-    isLive: true,
-    demoLink: "https://example.com",
-    codeLink: "https://github.com/example/aarogya-sarthi",
-    // image: "/project1.png" // Placeholder
+    isLive: false,
+    demoLink: "https://aarogya-sarthi.netlify.app/",
+    codeLink: "https://github.com/nocaptbsm/aarogya-_sarthi",
+    image: "/aarogya-sarthi.png",
   },
   {
-    title: "Project-Pho-Die",
-    description: "Advanced image processing tool for restoring and colorizing old photographs using GANs.",
-    tags: ["Python", "PyTorch", "React", "FastAPI"],
+    title: "Habit-Track",
+    description: "Apex Protocol is a high-fidelity, passive productivity tracking ecosystem designed to give you better visibility into your digital habits. It combines a stealthy Chrome Extension  with a powerful Command Dashboard.",
+    tags: ["TypeScript", "JavaScript", "CSS", "HTML", "Node.js"],
     isLive: true,
-    demoLink: "https://example.com",
-    codeLink: "https://github.com/example/pho-die",
+    demoLink: "https://www.habittrack.online",
+    codeLink: "https://github.com/24f2004663/Habit-Track",
+    image: "/habit-track.png",
   }
 ];
 

@@ -73,7 +73,10 @@ export default function AboutPage() {
                         <h3 className="text-xl font-bold">BS in Data Science & Applications</h3>
                         <div className="text-secondary">IIT Madras</div>
                         <p className="mt-2 text-secondary/80">
-                            Specializing in Machine Learning and Big Data Analytics. Building a strong foundation in statistics and algorithmic thinking.
+                            Specializing in Machine Learning and Big Data Analytics. 
+                        </p>
+                        <p className="mt-2 text-secondary/80">
+                            Building a strong foundation in statistics and algorithmic thinking.
                         </p>
                     </motion.div>
 
@@ -88,7 +91,10 @@ export default function AboutPage() {
                         <h3 className="text-xl font-bold">High School</h3>
                         <div className="text-secondary">Science Stream (PCM)</div>
                         <p className="mt-2 text-secondary/80">
-                            Focused on Physics, Chemistry, and Mathematics. Started competitive programming and web development journey.
+                            Focused on Physics, Chemistry, and Mathematics. 
+                        </p>
+                        <p className="mt-2 text-secondary/80">
+                            Started competitive programming and web development journey.
                         </p>
                     </motion.div>
 

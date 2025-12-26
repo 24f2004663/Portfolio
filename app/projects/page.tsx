@@ -10,36 +10,32 @@ const allProjects: ProjectProps[] = [
         title: "Aarogya Sarthi",
         description: "AI-powered healthcare assistant providing personalized medical advice and appointment scheduling.",
         tags: ["Python", "Next.js", "TensorFlow", "NLP"],
-        isLive: true,
-        demoLink: "https://example.com",
-        codeLink: "https://github.com/example/aarogya-sarthi",
-    },
-    {
-        title: "Project-Pho-Die",
-        description: "Advanced image processing tool for restoring and colorizing old photographs using GANs.",
-        tags: ["Python", "PyTorch", "React", "FastAPI"],
-        isLive: true,
-        demoLink: "https://example.com",
-        codeLink: "https://github.com/example/pho-die",
-    },
-    {
-        title: "Smart Home IoT",
-        description: "IoT based home automation system using ESP32 and MQTT.",
-        tags: ["C++", "IoT", "MQTT", "React"],
         isLive: false,
-        codeLink: "https://github.com/example/smart-home",
+        demoLink: "https://aarogya-sarthi.netlify.app/",
+        codeLink: "https://github.com/nocaptbsm/aarogya-_sarthi",
+        image: "/aarogya-sarthi.png",
+    },
+    {
+        title: "Habit-Track",
+        description: "Apex Protocol is a high-fidelity, passive productivity tracking ecosystem designed to give you better visibility into your digital habits. It combines a stealthy Chrome Extension  with a powerful Command Dashboard.",
+        tags: ["TypeScript", "JavaScript", "CSS", "HTML", "Node.js"],
+        isLive: true,
+        demoLink: "https://www.habittrack.online",
+        codeLink: "https://github.com/24f2004663/Habit-Track",
+        image: "/habit-track.png",
     },
     {
         title: "Portfolio V1",
         description: "My first portfolio website built with HTML/CSS and Vanilla JS.",
         tags: ["HTML", "CSS", "JavaScript"],
         isLive: true,
-        demoLink: "https://example.com/v1",
-        codeLink: "https://github.com/example/portfolio-v1",
+        demoLink: "https://manojk.xyz",
+        codeLink: "https://github.com/24f2004663/Portfolio",
+        image: "/portfolio-v1.png",
     }
 ];
 
-const categories = ["All", "Data Science", "Web Dev", "Hardware/IoT"];
+const categories = ["All", "Data Science", "Web Dev"];
 
 export default function ProjectsPage() {
     const [activeCategory, setActiveCategory] = useState("All");
@@ -49,7 +45,7 @@ export default function ProjectsPage() {
         const matchesCategory = activeCategory === "All" ||
             (activeCategory === "Data Science" && (project.tags.includes("Python") || project.tags.includes("TensorFlow"))) ||
             (activeCategory === "Web Dev" && (project.tags.includes("React") || project.tags.includes("Next.js") || project.tags.includes("HTML"))) ||
-            (activeCategory === "Hardware/IoT" && (project.tags.includes("IoT") || project.tags.includes("C++")));
+            (activeCategory === "Web Dev" && (project.tags.includes("TypeScript") || project.tags.includes("JavaScript") || project.tags.includes("HTML")));
 
         const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
             project.description.toLowerCase().includes(searchQuery.toLowerCase());
@@ -75,8 +71,8 @@ export default function ProjectsPage() {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category
-                                    ? "bg-accent text-white"
-                                    : "bg-secondary/10 text-secondary hover:bg-secondary/20"
+                                ? "bg-accent text-white"
+                                : "bg-secondary/10 text-secondary hover:bg-secondary/20"
                                 }`}
                         >
                             {category}
