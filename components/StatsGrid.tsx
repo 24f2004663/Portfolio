@@ -10,15 +10,6 @@ import devpostLogo from './devpost.png';
 
 const stats = [
     {
-        label: "LeetCode Solved",
-        value: "350+",
-        image: leetcodeLogo,
-        color: "text-yellow-500",
-        bg: "bg-yellow-500/10",
-        border: "border-yellow-500/20",
-        link: "https://leetcode.com/u/GAz2hqGXye/"
-    },
-    {
         label: "GitHub Commits",
         value: "1,200+",
         image: githubLogo,
@@ -26,15 +17,6 @@ const stats = [
         bg: "bg-green-500/10",
         border: "border-green-500/20",
         link: "https://github.com/24f2004663"
-    },
-    {
-        label: "Kaggle Tier",
-        value: "Expert",
-        image: kaggleLogo,
-        color: "text-blue-500",
-        bg: "bg-blue-500/10",
-        border: "border-blue-500/20",
-        link: "https://www.kaggle.com/zesalamander/"
     },
     {
         label: "Devpost Hackathons",

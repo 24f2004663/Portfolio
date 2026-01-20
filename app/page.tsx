@@ -15,6 +15,15 @@ const featuredProjects: ProjectProps[] = [
     image: "/aarogya-sarthi.png",
   },
   {
+    title: "FedEx Smart Recovery",
+    description: "Developed a full-stack debt recovery system featuring an intelligent Python-based allocation engine that optimizes case distribution based on agency performance and capacity. The application utilizes a Next.js/React frontend for real-time SLA monitoring, seamless agency collaboration, and automated breach detection.",
+    tags: ["Next.js", "Python", "PostgreSQL", "BullMQ"],
+    isLive: true,
+    demoLink: "https://teamseeker.online/login",
+    codeLink: "https://github.com/24f2004663/Fed-Ex-Team-Seekers",
+    image: "/fedex-recovery.png",
+  },
+  {
     title: "Habit-Track",
     description: "Apex Protocol is a high-fidelity, passive productivity tracking ecosystem designed to give you better visibility into your digital habits. It combines a stealthy Chrome Extension  with a powerful Command Dashboard.",
     tags: ["TypeScript", "JavaScript", "CSS", "HTML", "Node.js"],
